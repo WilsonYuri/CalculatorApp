@@ -53,8 +53,13 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
   void mode(var NewModeType) {
-    setState(() {
-      currentModeType = NewModeType;
+    setState(() { 
+      if (NewModeType == 'c') {
+        result = 0;
+      }
+      else{
+        currentModeType = NewModeType;
+      }
     });
   }
 
